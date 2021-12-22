@@ -31,5 +31,5 @@ then
 else
   echo -e "\n Não foi possivel achar o arquivo com o nome TLauncher.jar :("
   echo -e "\n 1° - Certifique se existe a pasta /home/nome_de_usuario/Games/TLauncher/"
-  echo -e "\n 2° - Se essa pasta existe, certifique se o nome do arquivo .jar está como 'TLauncher.jar' :V"
+  echo -e "\n 2° - Se essa pasta existe, certifique se o nome do arquivo .jar está como 'TLauncher.jar' :V\n"
 fi
