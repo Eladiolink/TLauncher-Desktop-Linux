@@ -3,20 +3,14 @@
 sudo chmod 775 mine
 sudo cp mine /usr/local/bin/
 
-if ls /opt/Minecraft; then
-  
-else
-  
-fi
+if !(ls /opt/Minecraft); 
+then
   sudo mkdir /opt/Minecraft
   
 sudo cp mine.png /opt/Minecraft/
 
-if ls $USER/.local/share/applications; then
-  
-else
-  
-fi
+if !(ls $USER/.local/share/applications); 
+then
   mkdir $USER/.local/share/applications
 
 cp minecraft.desktop ~/.local/share/applications/
