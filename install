@@ -6,12 +6,14 @@ sudo cp mine /usr/local/bin/
 if ![ls /opt/Minecraft]; 
 then
   sudo mkdir /opt/Minecraft
-  
+fi  
+
 sudo cp mine.png /opt/Minecraft/
 
 if ![ls $USER/.local/share/applications]; 
 then
   mkdir $USER/.local/share/applications
+fi
 
 cp minecraft.desktop ~/.local/share/applications/
 sudo cp minecraft.desktop /usr/share/applications/
