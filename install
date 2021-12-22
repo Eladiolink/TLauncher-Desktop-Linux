@@ -3,20 +3,22 @@
 sudo chmod 775 mine
 sudo cp mine /usr/local/bin/
 
-if [ "ls /opt/Minecraft" ]; 
+if [ `ls /opt/Minecraft` ]; 
 then
-  echo "pasta do Mine está ok"
+  echo -e "\nPasta do Mine está ok!! ;)\n"
 else
   sudo mkdir /opt/Minecraft
+  echo -e "\nPasta para os arquivos do Minecraft, foi criada com exito!! :v\n"
 fi  
 
 sudo cp mine.png /opt/Minecraft/
 
-if [ "ls $USER/.local/share/applications/" ]; 
+if [ `ls ~/.local/share/applications/` ]; 
 then
-  echo "Pasta do Usuario para o Mine está ok"
+  echo -e "\nPasta do Usuario para o Mine está ok!! :)\n"
 else
-  mkdir $USER/.local/share/applications/
+  mkdir ~/.local/share/applications/
+  echo -e "\nPasta para o Usuario criada com exito!! :v\n" 
 fi
 
 cp minecraft.desktop ~/.local/share/applications/
