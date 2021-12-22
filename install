@@ -12,7 +12,7 @@ fi
 
 sudo cp mine.png /opt/Minecraft/
 
-if ls $USER/.local/share/applications; 
+if ls $USER/.local/share/applications/; 
 then
   echo "Pasta do Usuario para o Mine está ok"
 else
