@@ -1,34 +1,33 @@
 #!/bin/bash
 
-$LocalFile = "~/Games/TLauncher/TLauncher.jar"
-if [ -e "$LocalFile" ]; 
+if [ -e ~/Games/TLauncher/TLauncher.jar ]; 
 then
   echo -e "\n Ok O arquivo exite em seu sistema!!! ;)\n"
   
   sudo chmod 775 mine
-sudo cp mine /usr/local/bin/
+  sudo cp mine /usr/local/bin/
 
-if [ `ls /opt/Minecraft` ]; 
-then
-  echo -e "\nPasta do Mine está ok!! ;)\n"
+  if [ `ls /opt/Minecraft` ]; 
+  then
+    echo -e "\nPasta do Mine está ok!! ;)\n"
+  else
+    sudo mkdir /opt/Minecraft
+    echo -e "\nPasta para os arquivos do Minecraft, foi criada com exito!! :v\n"
+  fi  
+
+  sudo cp mine.png /opt/Minecraft/
+
+  if [ `ls ~/.local/share/applications/` ]; 
+  then
+    echo -e "\nPasta do Usuario para o Mine está ok!! :)\n"
+  else
+    mkdir ~/.local/share/applications/
+    echo -e "\nPasta para o Usuario criada com exito!! :v\n" 
+  fi
+
+  cp minecraft.desktop ~/.local/share/applications/
+  sudo cp minecraft.desktop /usr/share/applications/
+ 
 else
-  sudo mkdir /opt/Minecraft
-  echo -e "\nPasta para os arquivos do Minecraft, foi criada com exito!! :v\n"
-fi  
-
-sudo cp mine.png /opt/Minecraft/
-
-if [ `ls ~/.local/share/applications/` ]; 
-then
-  echo -e "\nPasta do Usuario para o Mine está ok!! :)\n"
-else
-  mkdir ~/.local/share/applications/
-  echo -e "\nPasta para o Usuario criada com exito!! :v\n" 
-fi
-
-cp minecraft.desktop ~/.local/share/applications/
-sudo cp minecraft.desktop /usr/share/applications/
-else
-  echo -e "\n Não foi possivel achar o arquivo com o nome TLauncher.jar :("
-  
+  echo -e "\n Não foi possivel achar o arquivo com o nome TLauncher.jar :("  
 fi
