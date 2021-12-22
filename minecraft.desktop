@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Minecraft
+Exec=mine
+Terminal=false
+Type=Application
+Icon=/opt/Minecraft/mine.png
+Categories=Game;
+StartupNotify=false
