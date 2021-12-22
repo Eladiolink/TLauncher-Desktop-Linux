@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo cp mine /usr/local/bin/
-mkdir /opt/Minecraft
+sudo mkdir /opt/Minecraft
 sudo cp mine.png /opt/Minecraft/
 mkdir ~/.local/share/applications
 cp minecraft.desktop ~/.local/share/applications/
