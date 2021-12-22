@@ -3,13 +3,13 @@
 sudo chmod 775 mine
 sudo cp mine /usr/local/bin/
 
-if !(ls /opt/Minecraft); 
+if ![ls /opt/Minecraft]; 
 then
   sudo mkdir /opt/Minecraft
   
 sudo cp mine.png /opt/Minecraft/
 
-if !(ls $USER/.local/share/applications); 
+if ![ls $USER/.local/share/applications]; 
 then
   mkdir $USER/.local/share/applications
 
