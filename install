@@ -16,7 +16,7 @@ if ls $USER/.local/share/applications;
 then
   echo "Pasta do Usuario para o Mine está ok"
 else
-  mkdir $USER/.local/share/applications
+  mkdir $USER/.local/share/applications/
 fi
 
 cp minecraft.desktop ~/.local/share/applications/
