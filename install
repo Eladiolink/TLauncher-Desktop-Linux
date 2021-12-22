@@ -1,6 +1,11 @@
 #!/bin/bash
 
-sudo chmod 775 mine
+$LocalFile = "~/Games/TLauncher/TLauncher.jar"
+if [ -e "$LocalFile" ]; 
+then
+  echo -e "\n Ok O arquivo exite em seu sistema!!! ;)\n"
+  
+  sudo chmod 775 mine
 sudo cp mine /usr/local/bin/
 
 if [ `ls /opt/Minecraft` ]; 
@@ -23,3 +28,7 @@ fi
 
 cp minecraft.desktop ~/.local/share/applications/
 sudo cp minecraft.desktop /usr/share/applications/
+else
+  echo -e "\n Não foi possivel achar o arquivo com o nome TLauncher.jar :("
+  
+fi
